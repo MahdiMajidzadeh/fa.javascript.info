@@ -1,30 +1,30 @@
-# Bezier curve
+# منحنی بزیر
 
-Bezier curves are used in computer graphics to draw shapes, for CSS animation and in many other places.
+منحنی بزیر در گرافیک کامپیوتری، انیمیشن های سی سی و خیلی جاهای دیگر برای کشیدن شکل ها مورد استفاده قرار می‌گیرد. 
 
-They are a very simple thing, worth to study once and then feel comfortable in the world of vector graphics and advanced animations.
+موارد زیاد و خیلی ساده ای وجود دارد که ارزش یک بار خواندن دارند، پس در دنیای گرافیک برداری و انیمیشن های حرفه ای احساس راحتی کنید.
 
-## Control points
+## نقاط کنترل
 
-A [bezier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) is defined by control points.
+[منحنی بزیر](https://fa.wikipedia.org/wiki/%D9%85%D9%86%D8%AD%D9%86%DB%8C_%D8%A8%D8%B2%DB%8C%D9%87) با نقاط کنترل تعریف می شود.
 
-There may be 2, 3, 4 or more.
+ممکن است دو، سه ، چهار یا بیشتر نقاط کنترل داشته باشد.
 
-For instance, two points curve:
+به عنوان مثال منحنی دو نقطه‌ای:
 
 ![](bezier2.png)
 
-Three points curve:
+سه نقطه‌ای:
 
 ![](bezier3.png)
 
-Four points curve:
+چهار نقطه‌ای:
 
 ![](bezier4.png)
 
-If you look closely at these curves, you can immediately notice:
+اگر با دقت به این منحنی‌ها نگاه کنید، بلافاصله متوجه می‌شوید که:
 
-1. **Points are not always on curve.** That's perfectly normal, later we'll see how the curve is built.
+1. **نقاط همیشه بر روی محنی نیستند.** این کاملا عادی ست، بعدا خواهیم دید که محنی ها چطور ساخته می‌شوند.
 2. **The curve order equals the number of points minus one**.
 For two points we have a linear curve (that's a straight line), for three points -- quadratic curve (parabolic), for four points -- cubic curve.
 3. **A curve is always inside the [convex hull](https://en.wikipedia.org/wiki/Convex_hull) of control points:**
